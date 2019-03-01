@@ -1,0 +1,6 @@
+framework module Pods_BookShow {
+  umbrella header "Pods-BookShow-umbrella.h"
+
+  export *
+  module * { export * }
+}
