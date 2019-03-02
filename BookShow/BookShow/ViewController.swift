@@ -90,7 +90,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         print(Json)
                         book.title = Json["title"].string
                         book.authors = Json["authors"][0].string
-                        book.averageRating = String(Json["ratingsCount"].intValue)
+                        book.averageRating = String(Json["averageRating"].intValue)
                         print(book.averageRating)
                         book.imageLinks = Json["imageLinks"]["smallThumbnail"].string
                         if(!book.allNilField()){
